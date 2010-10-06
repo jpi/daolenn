@@ -1,12 +1,18 @@
-= Daolenn -- a modular job scheduler
+# Daolenn -- a modular job scheduler
 
-== Goals
+## Goals
 
 * lean
 * predictable
 
 
-== Design
+## Design
 
 * multi-process
-* HTTP-like protocol for internal communications
+  * launcher: forks processes
+  * dispatcher: consumes events, keeps track of jobs, and tells launcher to launch programs
+  * event sources:
+    * calendar
+    * filesystem
+    * ...
+* HTTP-like protocol for internal communications (main difference: bidirectional)
