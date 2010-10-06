@@ -1,0 +1,20 @@
+* Write prototype in Ruby
+  * use C or native Ruby libraries
+  * steal HTTP parser
+  * use iCalendar library for calendar events (recurring) parsing (or
+    implement a similar concept)
+  * use YAML for complex messages (config)
+  * use openssl and mutual authentification for network communications
+  * implement FSM for jobs sequencing
+  * implement parameter substitution ("$parameter") and parameters scopes
+  * implement configuration dispatching (dispatcher -> event sources)
+  * make the launcher small and simple
+  * implement log dispatching (jobs + daolenn's own logs)
+  * load balancing / failover ?
+  * implement web "console"
+    * two separate parts: view and change
+* Rewrite in C
+  * start with launcher
+  * then event sources
+  * and finally dispatcher.
+* Profit!
